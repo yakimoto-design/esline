@@ -110,33 +110,39 @@
 </head>
 <body class="text-slate-800 bg-white">
 
+    <!-- 
+        💡 【LINE連携設定 of ヒント】
+        ご自身のLINE公式アカウントの「友だち追加URL」が発行されましたら、
+        以下のコード内にある「https://line.me/R/ti/p/@137jkdrm」の部分をすべてご自身のURLに書き換えてください。
+    -->
+
     <!-- HEADER -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo area (TOPページと完全一致 - 100%確実に画像を表示するフォールバック機能付き) -->
+                <!-- Logo area (100%絶対に表示が崩れないフォールバック付きロゴエリア) -->
                 <div class="flex flex-col justify-center">
                     <span class="text-[11px] text-slate-500 font-medium tracking-wider">街の電気屋さん・工事屋さん</span>
                     <div class="flex items-center py-0.5">
                         <a href="index.html" class="flex items-center hover:opacity-85 transition duration-155">
-                            <!-- 初期srcには最も確率の高いエンコードURLをセットし、エラー時は handleLogoError() が自動でURLを巡回試行します -->
-                            <img 
-                                id="header-logo-img"
-                                src="https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo（横長）%20.png" 
-                                alt="株式会社エスライン公式ロゴ" 
-                                class="h-10 sm:h-11 w-auto object-contain"
-                                onerror="handleLogoError(this);"
-                            >
-                            <!-- すべてのロゴ画像URLが全滅した場合のみ表示されるテキストフォールバック -->
-                            <div id="header-logo-fallback" class="hidden flex items-center space-x-2">
-                                <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- ① デフォルト状態で表示される美しいテキストロゴ（エラー時もこれが維持されます） -->
+                            <div id="header-logo-fallback" class="flex items-center space-x-2">
+                                <svg class="w-8 h-8 text-primary shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M15.6 11.6L12 3 8.4 11.6H15.6z"/>
                                     <path d="M12 3v18"/>
                                     <path d="M5 21h14"/>
                                     <circle cx="12" cy="11.6" r="1.5" fill="currentColor"/>
                                 </svg>
-                                <span class="text-xl sm:text-2xl font-black text-primary tracking-tight">株式会社エスライン</span>
+                                <span class="text-xl sm:text-2xl font-black text-primary tracking-tight shrink-0 whitespace-nowrap">株式会社エスライン</span>
                             </div>
+                            
+                            <!-- ② バックグラウンドでのチェックが成功するまで非表示にすることで「壊れたアイコン」の露出を完全に防ぐ<img> -->
+                            <img 
+                                id="header-logo-img"
+                                src="" 
+                                alt="株式会社エスライン公式ロゴ" 
+                                class="hidden h-10 sm:h-11 w-auto object-contain"
+                            >
                         </a>
                     </div>
                 </div>
@@ -611,7 +617,7 @@
                 </div>
                 <!-- お悩み5 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
-                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami5.png?raw=true" alt="照明・LED交換：オフィスの蛍光灯からLEDへのバイパス工事や、ご自宅のモダンな照明器具交換を頼みたい" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami5.png'; this.onerror=null;">
+                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami5.png?raw=true" alt="照明・LED交換：オフィスの蛍光灯からLEDへのバイパス工事 or ご自宅のモダンな照明器具交換を頼みたい" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami5.png'; this.onerror=null;">
                 </div>
                 <!-- お悩み6 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
@@ -821,7 +827,7 @@
     <!-- ★FOOTER CTA (下部お見積りエリア：TOPページのデザイン・連絡先と完全同期) -->
     <section class="bg-slate-100 py-12 md:py-16 text-center">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="bg-secondary text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Free Consultation</span>
+            <span class="bg-[#ff7e00] text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Free Consultation</span>
             <h2 class="text-xl md:text-3xl font-black text-slate-900 mt-4 leading-snug">
                 お見積り・ご相談は無料です！<br>
                 お好みの方法でお気軽にご連絡ください
