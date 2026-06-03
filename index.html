@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社エスライン | 栃木県小山市・茨城県結城市周辺のエアコン販売・取付工事・修理</title>
+    
+    <!-- SEO / AIO Metadata (AIアシスタントや検索エンジンがページを正確に要約するための設定) -->
+    <meta name="description" content="株式会社エスラインは、栃木県小山市・茨城県結城市周辺でエアコン販売・取付工事・修理、LED照明交換、EVコンセント設置、一般電気工事を承る地域密着の電気工事プロ集団です。LINEで簡単無料見積もり・相談受付中。">
+    <meta name="keywords" content="エスライン,電気工事,エアコン取付,エアコン修理,結城市,小山市,LED交換,EVコンセント,エアコン販売">
+    <link rel="canonical" href="https://example.com/"> <!-- 実際のドメインが決まったら差し替えてください -->
+    
+    <!-- OGP Metadata (SNSシェア時やAIが情報を構造的に引用する際の見栄えを良くする設定) -->
+    <meta property="og:title" content="株式会社エスライン | 栃木県小山市・茨城県結城市周辺のエアコン工事・電気工事">
+    <meta property="og:description" content="エアコン販売・取付・修理、LED照明交換、EVコンセント設置、電気工事のことなら株式会社エスラインにおまかせ！LINEで簡単無料お見積り実施中。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://github.com/yakimoto-design/esline/blob/main/img/airconbanner.png?raw=true">
+    <meta property="og:site_name" content="株式会社エスライン">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- 
+        📊 JSON-LD 構造化データ（AIO & ローカルSEO対策）
+        AI検索エンジンやクローラーが「どの地域で、どんな事業をしていて、いつ営業しているか」を100%誤解なくインデックスするための仕組みです。
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Electrician",
+      "name": "株式会社エスライン",
+      "image": [
+        "https://github.com/yakimoto-design/esline/blob/main/img/rogo%EF%BC%88%E6%A8%AA%E9%95%B7%EF%BC%89.png",
+        "https://github.com/yakimoto-design/esline/blob/main/img/airconbanner.png"
+      ],
+      "telephone": "090-7426-8221",
+      "url": "https://example.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "307-0007",
+        "addressRegion": "茨城県",
+        "addressLocality": "結城市",
+        "streetAddress": "大字小田林 1422-8"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.3056, 
+        "longitude": 139.8519
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "栃木県小山市"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "茨城県結城市"
+        }
+      ],
+      "priceRange": "$$",
+      "description": "栃木県小山市・茨城県結城市周辺に特化した、地域密着の電気工事・エアコン取付工事・修理専門会社。一般電気工事、LED照明交換工事、EVコンセント設置工事、空調工事一式をプロの技術でご提供いたします。"
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#005bac',
+                        primaryDark: '#003e7a',
+                        secondary: '#ff7e00',
+                        secondaryDark: '#e06f00',
+                        lightBg: '#f0f7fc',
+                        darkBlue: '#002855',
+                        // LINEのブランドカラーを定義
+                        lineGreen: '#06C755',
+                        lineGreenDark: '#05B04B'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-white">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo area (公式横長ロゴ画像・サブテキストを削除してスッキリ配置) -->
+                <div class="flex flex-col justify-center">
+                    <span class="text-[11px] text-slate-500 font-medium tracking-wider">街の電気屋さん・工事屋さん</span>
+                    <div class="flex items-center py-0.5">
+                        <!-- 画像読み込みに成功した場合はロゴを表示 -->
+                        <img 
+                            id="header-logo-img"
+                            src="https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo%EF%BC%88%E6%A8%AA%E9%95%B7%EF%BC%89.png" 
+                            alt="株式会社エスライン 公式ロゴマーク" 
+                            class="h-10 sm:h-11 w-auto object-contain"
+                            onerror="this.style.display='none'; document.getElementById('header-logo-fallback').classList.remove('hidden');"
+                        >
+                        <!-- 画像読み込み制限・エラー時の美しいテキストフォールバック（自動切り替え） -->
+                        <div id="header-logo-fallback" class="hidden flex items-center space-x-2">
+                            <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15.6 11.6L12 3 8.4 11.6H15.6z"/>
+                                <path d="M12 3v18"/>
+                                <path d="M5 21h14"/>
+                                <circle cx="12" cy="11.6" r="1.5" fill="currentColor"/>
+                            </svg>
+                            <span class="text-xl sm:text-2xl font-black text-primary tracking-tight">株式会社エスライン</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PC Header Info (Hidden on mobile) -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <div class="text-right">
+                        <p class="text-xs text-slate-500">お見積り・ご相談無料！お気軽にお問い合わせください</p>
+                        <div class="flex items-center justify-end space-x-1 text-primary">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                            <a href="tel:090-7426-8221" class="text-2xl font-black hover:underline">090-7426-8221</a>
+                        </div>
+                        <p class="text-[10px] text-slate-400">受付時間 9:00〜18:00（定休日：日曜・祝日）</p>
+                    </div>
+                    <a href="https://line.me/R/ti/p/@137jkdrm" target="_blank" class="bg-lineGreen hover:bg-lineGreenDark text-white px-5 py-3 rounded-md font-bold flex items-center space-x-2 shadow-lg transition duration-200 transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-line text-xl"></i>
+                        <span>LINEで無料相談・お見積り</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Hidden on PC) -->
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-slate-700 hover:text-primary focus:outline-none p-2" aria-label="Menu">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 shadow-inner">
+            <div class="px-4 pt-3 pb-6 space-y-4 text-center">
+                <p class="text-xs text-slate-500">お見積り・ご相談無料！お気軽にお電話ください</p>
+                <div class="flex items-center justify-center space-x-2 text-primary">
+                    <i class="fa-solid fa-phone text-xl"></i>
+                    <a href="tel:090-7426-8221" class="text-3xl font-black">090-7426-8221</a>
+                </div>
+                <p class="text-xs text-slate-400">受付時間 9:00〜18:00（定休日：日曜・祝日）</p>
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                    <button onclick="openCompanyModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 py-3 rounded-lg font-bold flex items-center justify-center space-x-2 shadow-sm text-sm">
+                        <i class="fa-solid fa-building"></i>
+                        <span>会社概要</span>
+                    </button>
+                    <a href="https://line.me/R/ti/p/@137jkdrm" target="_blank" class="bg-lineGreen hover:bg-lineGreenDark text-white py-3 rounded-lg font-bold flex items-center justify-center space-x-2 shadow-sm text-sm">
+                        <i class="fa-brands fa-line text-lg"></i>
+                        <span>LINEで相談</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-2 text-xs font-bold text-slate-600 pt-3 border-t border-slate-100">
+                    <a href="#troubles" class="py-2 bg-slate-50 rounded hover:bg-slate-100">お困りごと解決</a>
+                    <a href="#reasons" class="py-2 bg-slate-50 rounded hover:bg-slate-100">選ばれる理由</a>
+                    <a href="#services" class="py-2 bg-slate-50 rounded hover:bg-slate-100">サービス一覧</a>
+                    <a href="#area" class="py-2 bg-slate-50 rounded hover:bg-slate-100">対応エリア</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (レスポンシブ切り替え: PC版とSP版画像を自動出し分け) -->
+    <section class="relative w-full overflow-hidden bg-white border-b border-slate-100">
+        <div class="max-w-[1920px] mx-auto">
+            <picture class="w-full block">
+                <!-- タブレット・PCサイズ (768px以上) で表示 -->
+                <source media="(min-width: 768px)" srcset="https://github.com/yakimoto-design/esline/blob/main/img/hero%EF%BC%88PC%EF%BC%89.png?raw=true">
+                <!-- スマートフォンサイズ (768px未満) で表示 -->
+                <img 
+                    src="https://github.com/yakimoto-design/esline/blob/main/img/hero%EF%BC%88SP%EF%BC%89.png?raw=true" 
+                    alt="株式会社エスライン ヒーローイメージ（エアコン販売・取付工事・修理サービス）" 
+                    class="w-full h-auto block"
+                    onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/hero%EF%BC%88SP%EF%BC%89.png'; this.onerror=null;"
+                >
+            </picture>
+        </div>
+    </section>
+
+    <!-- CAMPAIGN BANNER 1 (ファーストビュー直下の即時訴求スポット - campaign.html へのリンク) -->
+    <section class="py-6 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="campaign.html" target="_blank" rel="noopener noreferrer" class="block rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:opacity-95">
+                <img 
+                    src="https://github.com/yakimoto-design/esline/blob/main/img/airconbanner.png?raw=true" 
+                    alt="エアコン早期割引＆買い替え特別祭実施中！キャンペーン特設ページへ" 
+                    class="w-full h-auto block"
+                    onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/airconbanner.png'; this.onerror=null;"
+                >
+            </a>
+        </div>
+    </section>
+
+    <!-- TROUBLES SECTION (お悩み解決を画像に差し替え) -->
+    <section id="troubles" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xl md:text-3xl font-black text-slate-900 tracking-tight">
+                    こんな<span class="text-primary border-b-4 border-sky-400">お困りごと</span>ありませんか？
+                </h2>
+                <p class="text-sm text-slate-500 mt-3">お住まいの電気やエアコンのあらゆるトラブル・ご要望、まるごとお引き受けします！</p>
+            </div>
+
+            <!-- お悩み画像グリッド (PC/タブレットでは3列並び、スマホでは縦並び1カラム) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- お悩み1: エアコンを新しくしたい -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/nayami1.png?raw=true" 
+                        alt="エアコンを新しく省エネ性能の高い機種に買い替えたい" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami1.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- お悩み2: エアコン取付・取替 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/nayami2.png?raw=true" 
+                        alt="引越しや部屋の模様替えに伴うエアコンの取付工事・取替・移設" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami2.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- お悩み3: エアコンの調子が悪い -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/nayami3.png?raw=true" 
+                        alt="エアコンの調子が悪い（風が冷えない・暖まらない・異音や水漏れがする）" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami3.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- お悩み4: コンセントの増設 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/nayami4.png?raw=true" 
+                        alt="お部屋のコンセント増設工事や電気スイッチ・電気配線の新設" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami4.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- お悩み5: 照明・LED交換 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/nayami5.png?raw=true" 
+                        alt="長寿命で省エネなLED照明への交換や、お部屋のシーリングライト設置" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami5.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- お悩み6: その他なんでも -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/nayami6.png?raw=true" 
+                        alt="EVコンセント設置など、その他住まいのあらゆる電気に関することをプロに相談したい" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami6.png'; this.onerror=null;"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MIDDLE CTA AREA (お悩みセクション、選ばれる理由セクションとの双方に境目の斜めスリットを追加 - LINEお問い合わせ仕様) -->
+    <section class="relative bg-gradient-to-r from-primary to-primaryDark pt-16 pb-16 text-white overflow-hidden">
+        
+        <!-- 上部の斜めの境目（お悩みセクションからの移行） -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-8 text-slate-50" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 L1200,0 L0,120 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+
+        <!-- 下部の斜めの境目（選ばれる理由セクションへの移行） -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-8 text-primary" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200,120 L0,120 L1200,0 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+            <div class="text-center md:text-left flex flex-col md:flex-row items-center space-x-4">
+                <!-- Friendly Electrician Avatar SVG (親しみやすい電気屋のイラスト) -->
+                <svg class="w-16 h-16 shrink-0 bg-white rounded-full p-1 border-2 border-sky-300" viewBox="0 0 100 100" fill="none">
+                    <!-- Head & ears -->
+                    <circle cx="50" cy="45" r="22" fill="#fed7aa"/>
+                    <circle cx="26" cy="45" r="5" fill="#fed7aa"/>
+                    <circle cx="74" cy="45" r="5" fill="#fed7aa"/>
+                    <!-- Hair -->
+                    <path d="M26 40 C30 20, 70 20, 74 40 C70 24, 30 24, 26 40 Z" fill="#1e293b"/>
+                    <path d="M25 35 Q50 15 75 35" stroke="#1e293b" stroke-width="12" stroke-linecap="round"/>
+                    <!-- Eyes & Smile -->
+                    <circle cx="42" cy="43" r="3" fill="#1e293b"/>
+                    <circle cx="58" cy="43" r="3" fill="#1e293b"/>
+                    <path d="M44 55 Q50 62 56 55" stroke="#1e293b" stroke-width="3" stroke-linecap="round"/>
+                    <!-- Cap -->
+                    <path d="M25 32 Q50 10 75 32 Z" fill="#005bac"/>
+                    <path d="M40 18 Q50 10 75 22" stroke="#005bac" stroke-width="5" stroke-linecap="round"/>
+                    <!-- Body & Collar -->
+                    <path d="M20 90 C20 70, 80 70, 80 90 Z" fill="#005bac"/>
+                    <path d="M38 70 L50 82 L62 70" fill="#fed7aa"/>
+                    <!-- Inner yellow shirt -->
+                    <path d="M44 70 L50 78 L56 70 Z" fill="#facc15"/>
+                </svg>
+                <div class="mt-4 md:mt-0">
+                    <span class="bg-lineGreen text-white text-xs font-black px-2 py-1 rounded">LINE相談 24h受付</span>
+                    <h3 class="text-lg md:text-xl font-bold mt-1">お見積り・ご相談は無料です！LINEでお気軽にお送りください</h3>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center md:items-end space-y-2 relative z-10">
+                <a href="https://line.me/R/ti/p/@137jkdrm" target="_blank" class="bg-lineGreen hover:bg-lineGreenDark text-white font-extrabold text-lg px-8 py-4 rounded-xl flex items-center space-x-3 shadow-lg transform hover:-translate-y-1 transition duration-200 w-full md:w-auto justify-center">
+                    <i class="fa-brands fa-line text-2xl"></i>
+                    <span>LINEでお問い合わせ</span>
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="fa-solid fa-phone text-sm"></i>
+                    <a href="tel:090-7426-8221" class="text-xl font-black hover:underline">090-7426-8221</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REASONS SECTION (選ばれる理由を画像グリッドへ差し替え) -->
+    <section id="reasons" class="py-16 bg-[#005bac] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold tracking-widest text-sky-200 uppercase block mb-1">// S-LINE //</span>
+                <h2 class="text-2xl md:text-4xl font-black tracking-tight">
+                    株式会社エスラインが選ばれる理由
+                </h2>
+                <div class="w-16 h-1 bg-secondary mx-auto mt-4"></div>
+            </div>
+
+            <!-- 選ばれる理由画像グリッド (PCでは4列、タブレットでは2列、スマホでは縦並び1カラム) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <!-- 理由1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/reason1.png?raw=true" 
+                        alt="選ばれる理由1: 結城市・小山市の地域密着で、トラブル時にお電話一本ですぐに迅速対応" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/reason1.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- 理由2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/reason2.png?raw=true" 
+                        alt="選ばれる理由2: 明朗会計で安心。現地調査の上で事前にお見積りを作成し、追加料金の心配なし" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/reason2.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- 理由3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/reason3.png?raw=true" 
+                        alt="選ばれる理由3: 電気工事の第二種電気工事士等、確かな技術と豊富な経験があるプロの有資格者が対応" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/reason3.png'; this.onerror=null;"
+                    >
+                </div>
+
+                <!-- 理由4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img 
+                        src="https://github.com/yakimoto-design/esline/blob/main/img/reason4.png?raw=true" 
+                        alt="選ばれる理由4: エアコン取付工事や各種工事後も安心のアフターサポート、万全のフォロー体制" 
+                        class="w-full h-auto block"
+                        onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/reason4.png'; this.onerror=null;"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (サービスのご案内) -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold tracking-widest text-primary uppercase block mb-1">// OUR SERVICES //</span>
+                <h2 class="text-2xl md:text-4xl font-black text-slate-900 tracking-tight">
+                    サービスのご案内
+                </h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1: エアコン -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 bg-slate-100">
+                            <img 
+                                src="https://github.com/yakimoto-design/esline/blob/main/img/aircon.png?raw=true" 
+                                alt="エアコン販売・取付工事（高品質な施工と各種最新エアコンの取り扱い）" 
+                                class="w-full h-full object-cover"
+                                onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/aircon.png'; this.onerror=null;"
+                            >
+                            <span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">基本サービス</span>
+                        </div>
+                        <div class="p-6 pb-8">
+                            <h3 class="text-lg font-black text-slate-900 border-l-4 border-primary pl-2 mb-2">エアコン販売・取付工事</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mt-2">各種メーカーの最新エアコンを豊富に取り扱い。設置環境の確認から丁寧な取付工事、試運転確認までワンストップで責任を持ってお任せいただけます。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: 修理 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 bg-slate-100">
+                            <img 
+                                src="https://github.com/yakimoto-design/esline/blob/main/img/shyuri.png?raw=true" 
+                                alt="エアコン修理・点検・エアコンガス補充メンテナンス" 
+                                class="w-full h-full object-cover"
+                                onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/aircon.png'; this.onerror=null;"
+                            >
+                            <span class="absolute top-3 left-3 bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">迅速対応</span>
+                        </div>
+                        <div class="p-6 pb-8">
+                            <h3 class="text-lg font-black text-slate-900 border-l-4 border-sky-600 pl-2 mb-2">エアコン修理・メンテナンス</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mt-2">「冷風・温風が出ない」「カタカタと異音が聞こえる」「水漏れが発生した」など、突然のトラブルもお任せください。メーカー不問でスピード対応します。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: 電気工事 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 bg-slate-100">
+                            <img 
+                                src="https://github.com/yakimoto-design/esline/blob/main/img/denki.png?raw=true" 
+                                alt="コンセント増設工事やEV充電用コンセント設置工事などの電気工事一式" 
+                                class="w-full h-full object-cover"
+                                onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/aircon.png'; this.onerror=null;"
+                            >
+                            <span class="absolute top-3 left-3 bg-blue-800 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">資格者施工</span>
+                        </div>
+                        <div class="p-6 pb-8">
+                            <h3 class="text-lg font-black text-slate-900 border-l-4 border-blue-800 pl-2 mb-2">電気工事・配線工事</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mt-2">利便性を向上するコンセントの増設、古くなった配線の引き直し、専用回路の設置工事、ブレーカーの容量変更など、安全基準に準拠した施工をお届けします。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: 照明 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 bg-slate-100">
+                            <img 
+                                src="https://github.com/yakimoto-design/esline/blob/main/img/shyoumei.png?raw=true" 
+                                alt="省エネ・高寿命なLED照明へのリニューアル交換工事" 
+                                class="w-full h-full object-cover"
+                                onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/aircon.png'; this.onerror=null;"
+                            >
+                            <span class="absolute top-3 left-3 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">省エネ貢献</span>
+                        </div>
+                        <div class="p-6 pb-8">
+                            <h3 class="text-lg font-black text-slate-900 border-l-4 border-secondary pl-2 mb-2">照明・LED交換</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mt-2">オフィス or ご自宅の長寿命・高効率LED照明へのリニューアル、モダンなシーリングファン or 各種照明器具の交換・安定器のバイパス工事もお引き受けします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPAIGN BANNER 2 (サービス理解後のクロージング誘導スポット - 実バナー画像差し替え) -->
+    <section class="py-10 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="campaign.html" target="_blank" class="block rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 hover:opacity-95">
+                <img 
+                    src="https://github.com/yakimoto-design/esline/blob/main/img/airconbanner.png?raw=true" 
+                    alt="公式LINE登録でお得になるエアコン早期割引キャンペーン詳細へ" 
+                    class="w-full h-auto block"
+                    onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/airconbanner.png'; this.onerror=null;"
+                >
+            </a>
+        </div>
+    </section>
+
+    <!-- AREA SECTION (対応エリアのみに調整・1カラム設計) -->
+    <section id="area" class="py-16 bg-slate-50 border-t border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <span class="text-primary text-xs font-black uppercase tracking-wider block mb-1">SERVICE AREA</span>
+                <h3 class="text-xl md:text-2xl font-black text-slate-900 mb-6">対応エリア詳細</h3>
+                
+                <!-- Area Map Image Integration with Responsive Switch -->
+                <div class="rounded-xl overflow-hidden shadow-sm border border-slate-100 max-w-lg mx-auto">
+                    <picture class="w-full block">
+                        <!-- タブレット・PCサイズ (768px以上) で表示 -->
+                        <source media="(min-width: 768px)" srcset="https://github.com/yakimoto-design/esline/blob/main/img/area.png?raw=true">
+                        <!-- スマートフォンサイズ (768px未満) で表示 -->
+                        <img 
+                            src="https://github.com/yakimoto-design/esline/blob/main/img/area(SP).png?raw=true" 
+                            alt="株式会社エスライン対応エリア：栃木県小山市・茨城県結城市周辺のマップ" 
+                            class="w-full h-auto block"
+                            onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/area(SP).png'; this.onerror=null;"
+                        >
+                    </picture>
+                </div>
+                
+                <p class="text-sm text-slate-600 mt-6 leading-relaxed max-w-xl mx-auto">
+                    地元ならではのフットワークの軽さでスピーディーに対応いたします。エリア内であればお電話一本ですぐに駆けつけますので、急なトラブルの際もご安心ください！
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA (下部お見積りエリア - LINE・電話の2大窓口仕様) -->
+    <section class="bg-slate-100 py-12 md:py-16 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="bg-secondary text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Free Consultation</span>
+            <h2 class="text-xl md:text-3xl font-black text-slate-900 mt-4 leading-snug">
+                お見積り・ご相談は無料です！<br>
+                お好みの方法でお気軽にご連絡ください
+            </h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-4 mb-8"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto items-center">
+                <!-- Phone Card -->
+                <div class="bg-white p-6 h-full rounded-2xl shadow-sm border border-slate-200 flex flex-col items-center justify-center">
+                    <span class="text-[10px] text-slate-400 font-bold block mb-1">お電話でのお問い合わせ・ご相談</span>
+                    <div class="flex items-center space-x-2 text-primary">
+                        <i class="fa-solid fa-phone text-xl"></i>
+                        <a href="tel:090-7426-8221" class="text-2xl md:text-3xl font-black hover:underline tracking-tight">090-7426-8221</a>
+                    </div>
+                    <span class="text-[10px] text-slate-500 mt-2">受付時間 9:00〜18:00（定休日：日曜・祝日）</span>
+                </div>
+
+                <!-- LINE Card -->
+                <a href="https://line.me/R/ti/p/@137jkdrm" target="_blank" class="w-full bg-lineGreen hover:bg-lineGreenDark text-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-200 group">
+                    <span class="text-[10px] text-white opacity-90 font-bold block mb-1">24時間受付 LINEでお問い合わせ</span>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-brands fa-line text-3xl group-hover:scale-110 transition duration-200"></i>
+                        <span class="text-lg font-black">LINE公式アカウントはこちら</span>
+                    </div>
+                    <span class="text-[10px] text-white opacity-85 mt-2">友だち追加後、お気軽にご相談内容や現場写真を送信ください</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (フッター) -->
+    <footer class="bg-darkBlue text-white pt-12 pb-6 text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-sky-950">
+                
+                <!-- Left: Branding & Info (6 columns - フッターロゴはシンプルな美しいテキストのみに変更) -->
+                <div class="md:col-span-6 flex flex-col justify-center space-y-3">
+                    <span class="text-xs text-sky-400 font-semibold">街の電気屋さん・工事屋さん</span>
+                    <div class="py-1">
+                        <span class="text-3xl font-black text-white tracking-tight">株式会社エスライン</span>
+                    </div>
+                    <p class="text-xs text-sky-200 leading-relaxed max-w-sm mt-2">
+                        〒307-0007 茨城県結城市大字小田林 1422-8<br>
+                        対応エリア：栃木県小山市・茨城県結城市および周辺地域
+                    </p>
+                </div>
+
+                <!-- Right: Navigation (6 columns) -->
+                <div class="md:col-span-6 grid grid-cols-2 gap-4 text-xs">
+                    <div>
+                        <h4 class="font-bold text-sky-400 mb-3 border-b border-sky-950 pb-1">サービス情報</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#troubles" class="text-slate-300 hover:text-white transition">お困りごと解決</a></li>
+                            <li><a href="#services" class="text-slate-300 hover:text-white transition">サービス一覧</a></li>
+                            <li><a href="#area" class="text-slate-300 hover:text-white transition">対応エリア詳細</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sky-400 mb-3 border-b border-sky-950 pb-1">企業・ポリシー</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" onclick="openCompanyModal()" class="text-slate-300 hover:text-white transition">会社概要</a></li>
+                            <li><a href="https://line.me/R/ti/p/@137jkdrm" target="_blank" class="text-slate-300 hover:text-white transition">LINEで問い合わせ</a></li>
+                            <li><a href="#" onclick="openPrivacyModal()" class="text-slate-300 hover:text-white transition">プライバシーポリシー</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Credits -->
+            <div class="pt-6 flex flex-col md:flex-row items-center justify-between text-slate-400 text-[11px]">
+                <p>&copy; 株式会社エスライン All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">栃木県小山市・茨城県結城市の各種電気工事・エアコンプロ集団</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY BACK TO TOP BUTTON (スマホ版のみで動作するページトップボタン) -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-slate-800 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 z-40 hover:bg-slate-700" aria-label="Page Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- INLINE COMPANY PROFILE MODAL (会社概要用のモーダルウィンドウ) -->
+    <div id="company-modal" class="fixed inset-0 bg-slate-900/60 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-all duration-300 flex flex-col" id="company-modal-content">
+            <!-- Header -->
+            <div class="bg-primary p-4 text-white flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-building"></i>
+                    <h3 class="font-black text-lg">会社概要</h3>
+                </div>
+                <button onclick="closeCompanyModal()" class="text-white hover:text-sky-200 focus:outline-none p-1">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Company Info Content -->
+            <div class="p-6 overflow-y-auto max-h-[80vh]">
+                <div class="space-y-6">
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="text-primary font-black text-xl">株式会社エスライン</h4>
+                        <p class="text-xs text-slate-400 mt-1">S-LINE Co., Ltd.</p>
+                    </div>
+
+                    <!-- Profile Table -->
+                    <table class="w-full text-xs text-left border-collapse">
+                        <tbody>
+                            <tr class="border-b border-slate-100">
+                                <th class="py-3 px-2 font-bold text-slate-500 w-24 shrink-0 valign-top">会社名</th>
+                                <td class="py-3 px-2 text-slate-800 font-semibold">株式会社エスライン</td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <th class="py-3 px-2 font-bold text-slate-500 valign-top">代表者</th>
+                                <td class="py-3 px-2 text-slate-800 font-semibold">染田　雅英</td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <th class="py-3 px-2 font-bold text-slate-500 valign-top">所在地</th>
+                                <td class="py-3 px-2 text-slate-800 leading-relaxed font-semibold">
+                                    〒307-0007<br>
+                                    茨城県結城市大字小田林 1422-8
+                                </td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <th class="py-3 px-2 font-bold text-slate-500 valign-top">事業内容</th>
+                                <td class="py-3 px-2 text-slate-800 font-semibold">
+                                    <ul class="space-y-1.5 list-disc pl-4 text-slate-600 font-medium">
+                                        <li>一般電気工事</li>
+                                        <li>LED照明交換工事</li>
+                                        <li>EVコンセント設置工事</li>
+                                        <li>空調工事（ルームエアコン、業務用エアコン）</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Footer Action -->
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-end">
+                        <button onclick="closeCompanyModal()" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-6 py-2.5 rounded-lg shadow-sm">
+                            閉じる
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INLINE PRIVACY POLICY MODAL (プライバシーポリシー用の新規モーダルウィンドウ) -->
+    <div id="privacy-modal" class="fixed inset-0 bg-slate-900/60 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-all duration-300 flex flex-col" id="privacy-modal-content">
+            <!-- Header -->
+            <div class="bg-primary p-4 text-white flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3 class="font-black text-lg">プライバシーポリシー</h3>
+                </div>
+                <button onclick="closePrivacyModal()" class="text-white hover:text-sky-200 focus:outline-none p-1">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Privacy Policy Content -->
+            <div class="p-6 overflow-y-auto max-h-[80vh] text-xs leading-relaxed text-slate-600 space-y-4">
+                <p class="font-bold text-slate-800 text-sm">個人情報保護方針</p>
+                <p>株式会社エスライン（以下、「当社」）は、本ウェブサイト上で提供するサービスにおける、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+                
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800">1. 個人情報の定義</h4>
+                    <p>「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報（個人識別情報）を指します。</p>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800">2. 個人情報の収集方法と利用目的</h4>
+                    <p>当社は、エアコン販売・工事・点検、電気工事、またはそれに伴うLINE公式アカウント等によるお問い合わせの際に、氏名、住所、電話番号などの個人情報を取得することがあります。取得した個人情報は、以下の目的の範囲内で適正に取り扱います。</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                        <li>お見積りの作成、工事日程の調整、および施工・保守・アフターサービスのご提供のため</li>
+                        <li>お客様からのお問い合わせ、ご相談への対応のため</li>
+                        <li>急を要する連絡、および災害時の安全確認等のため</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800">3. 個人情報の第三者提供</h4>
+                    <p>当社は、法令に基づく場合、または生命・身体・財産の保護のために必要な場合を除き、あらかじめご本人の同意を得ることなく、個人情報を第三者に提供することはありません。</p>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800">4. 個人情報の安全管理</h4>
+                    <p>当社は、取り扱う個人情報の漏洩、滅失または毀損の防止その他の個人情報の安全管理のために必要かつ適切な措置を講じます。</p>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800">5. 個人情報の開示・訂正・利用停止</h4>
+                    <p>お客様ご本人から、個人情報の開示、訂正、利用停止、削除等のお申し出があった場合には、ご本人であることを確認の上、速やかに対応いたします。</p>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800">6. お問い合わせ窓口</h4>
+                    <p>当社の個人情報の取扱に関するお問い合わせは、下記までご連絡ください。</p>
+                    <p class="font-bold mt-1 text-slate-800">
+                        株式会社エスライン<br>
+                        代表取締役：染田 雅英<br>
+                        電話番号：090-7426-8221
+                    </p>
+                </div>
+
+                <!-- Footer Action -->
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-end">
+                    <button onclick="closePrivacyModal()" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-6 py-2.5 rounded-lg shadow-sm">
+                        閉じる
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Hamburger Menu Toggle Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                // Change hamburger icon to close X icon
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            } else {
+                mobileMenu.classList.add('hidden');
+                // Change back to hamburger icon
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        });
+
+        // Hide mobile menu on link click
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+
+        // Scroll Logic for Back-to-Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                backToTopBtn.classList.add('opacity-100');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                backToTopBtn.classList.remove('opacity-100');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Company Modal Functionality (会社概要用スクリプト)
+        const companyModal = document.getElementById('company-modal');
+        const companyModalContent = document.getElementById('company-modal-content');
+
+        function openCompanyModal() {
+            companyModal.classList.remove('opacity-0', 'pointer-events-none');
+            companyModalContent.classList.remove('scale-95');
+            companyModalContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden'; // 背景スクロール固定
+        }
+
+        function closeCompanyModal() {
+            companyModal.classList.add('opacity-0', 'pointer-events-none');
+            companyModalContent.classList.remove('scale-100');
+            companyModalContent.classList.add('scale-95');
+            document.body.style.overflow = ''; // スクロール解除
+        }
+
+        companyModal.addEventListener('click', (e) => {
+            if (e.target === companyModal) {
+                closeCompanyModal();
+            }
+        });
+
+        // Privacy Modal Functionality (プライバシーポリシー用スクリプト)
+        const privacyModal = document.getElementById('privacy-modal');
+        const privacyModalContent = document.getElementById('privacy-modal-content');
+
+        function openPrivacyModal() {
+            privacyModal.classList.remove('opacity-0', 'pointer-events-none');
+            privacyModalContent.classList.remove('scale-95');
+            privacyModalContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden'; // 背景スクロール固定
+        }
+
+        function closePrivacyModal() {
+            privacyModal.classList.add('opacity-0', 'pointer-events-none');
+            privacyModalContent.classList.remove('scale-100');
+            privacyModalContent.classList.add('scale-95');
+            document.body.style.overflow = ''; // スクロール解除
+        }
+
+        privacyModal.addEventListener('click', (e) => {
+            if (e.target === privacyModal) {
+                closePrivacyModal();
+            }
+        });
+    </script>
+</body>
+</html>
