@@ -20,7 +20,7 @@
     <meta property="og:site_name" content="株式会社エスライン">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- 検索エンジン用構造化データ (JSON-LD) - 地域密着型ビジネスのSEO評価を劇的に高めます -->
+    <!-- 検索エンジン用構造化データ (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -171,7 +171,7 @@
         <!-- Mobile Navigation Menu Dropdown (TOPページと完全一致) -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 shadow-inner">
             <div class="px-4 pt-3 pb-6 space-y-4 text-center">
-                <p class="text-xs text-slate-500">お見積り・ご相談無料！お気軽にお電話ください</p>
+                <p class="text-xs text-slate-500">お見積り・ご相談無料！お気軽お電話ください</p>
                 <div class="flex items-center justify-center space-x-2 text-primary">
                     <i class="fa-solid fa-phone text-xl"></i>
                     <a href="tel:090-7426-8221" class="text-3xl font-black">090-7426-8221</a>
@@ -325,7 +325,7 @@
     </section>
 
     <!-- ==========================================
-        「3」 サイズ別価格表
+        「3」 サイズ別価格表 (お見積もり対応テキスト追加)
     ========================================== -->
     <section class="py-12 px-4 bg-white border-b border-gray-100">
         <div class="max-w-4xl mx-auto">
@@ -376,14 +376,21 @@
                 </div>
             </div>
 
-            <p class="text-right text-xs text-gray-500 mt-4 font-bold">
-                ※こちらの金額には消費税がかかります。
-            </p>
+            <!-- 他のサイズのご案内 ＆ 消費税注記エリア -->
+            <div class="mt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-bold gap-3">
+                <p class="text-left text-daikinBlue bg-blue-50 px-4 py-2.5 rounded-xl border border-blue-100 flex items-center space-x-2 w-full md:w-auto shadow-sm">
+                    <span class="text-base"><i class="fa-solid fa-circle-info"></i></span>
+                    <span>他のサイズ商品も取り揃えておりますのでお見積もりもさせていただきます。</span>
+                </p>
+                <p class="text-right whitespace-nowrap self-end md:self-center">
+                    ※こちらの金額には消費税がかかります。
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- ==========================================
-        「4」 標準工事費込み ＆ 3つの0円 (画像差し替え・SEO alt設定)
+        「4」 標準工事費込み ＆ 3つの0円 (画像差し替え)
     ========================================== -->
     <section class="py-12 px-4 bg-bgLightBlue border-b border-gray-100">
         <div class="max-w-4xl mx-auto">
@@ -444,7 +451,7 @@
     </section>
 
     <!-- ==========================================
-        「5」 追加費用について (配管追加・スリムカバーの画像化・SEO alt設定)
+        「5」 追加費用について (配管追加・スリムカバーの画像化・alt設定)
     ========================================== -->
     <section class="py-12 px-4 bg-white border-b border-gray-100">
         <div class="max-w-4xl mx-auto">
@@ -581,6 +588,42 @@
         </div>
     </section>
 
+    <!-- ==========================================
+        ★新規追加：「8」 お支払い方法 (現金またはPayPay)
+    ========================================== -->
+    <section class="py-12 px-4 bg-bgLightBlue border-b border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center space-x-3 mb-8">
+                <span class="bg-[#002b66] text-white text-lg font-black w-8 h-8 rounded-md flex items-center justify-center">8</span>
+                <h2 class="text-xl md:text-2xl font-black text-[#002b66]">お支払い方法</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <!-- 現金支払い -->
+                <div class="bg-white rounded-2xl p-5 border border-gray-200 shadow-sm flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 text-[#005bac] flex items-center justify-center text-2xl shrink-0 border border-blue-100">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-sm text-gray-900 mb-1">現金でのお支払い</h3>
+                        <p class="text-[11px] text-gray-500 leading-relaxed font-semibold">工事完了時にその場で現金にてお支払いいただけます。</p>
+                    </div>
+                </div>
+
+                <!-- PayPay支払い -->
+                <div class="bg-white rounded-2xl p-5 border border-[#ff0033]/20 shadow-sm flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-red-50 text-[#ff0033] flex items-center justify-center text-2xl shrink-0 border border-red-100">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-sm text-gray-900 mb-1">PayPay（ペイペイ）支払い</h3>
+                        <p class="text-[11px] text-gray-500 leading-relaxed font-semibold">QRコード決済「PayPay」がご利用可能です。お手軽に決済いただけます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- TROUBLES SECTION (お悩み解決) -->
     <section id="troubles" class="py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -607,15 +650,15 @@
                 </div>
                 <!-- お悩み4 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
-                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami4.png?raw=true" alt="コンセントの増設工事：エアコン用の専用コンセント増設や、お部屋のコンセントが足りない問題を解決したい" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami4.png'; this.onerror=null;">
+                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami4.png?raw=true" alt="コンセントの工事" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami4.png'; this.onerror=null;">
                 </div>
                 <!-- お悩み5 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
-                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami5.png?raw=true" alt="照明・LED交換：オフィスの蛍光灯からLEDへのバイパス工事 or ご自宅のモダンな照明器具交換を頼みたい" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami5.png'; this.onerror=null;">
+                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami5.png?raw=true" alt="照明・LED交換" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami5.png'; this.onerror=null;">
                 </div>
                 <!-- お悩み6 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 border border-slate-150">
-                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami6.png?raw=true" alt="その他電気に関すること：ブレーカーがよく落ちる、EVコンセントを設置したいなど地元のプロに相談したい" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami6.png'; this.onerror=null;">
+                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/nayami6.png?raw=true" alt="その他の電気に関すること" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/nayami6.png'; this.onerror=null;">
                 </div>
             </div>
         </div>
@@ -697,7 +740,7 @@
                     <img src="https://github.com/yakimoto-design/esline/blob/main/img/reason3.png?raw=true" alt="選ばれる理由3 明朗会計：工事費用の内訳を包み隠さずご説明。施工前の確定見積もり以外に追加費用が突然発生することは一切ありません！" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/reason3.png'; this.onerror=null;">
                 </div>
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
-                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/reason4.png?raw=true" alt="選ばれる理由4 資格者施工：電気工事士などエアコン設置・電気工事の専門国家資格を保有したベテランが、安全に最善の施工を行います！" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/reason4.png'; this.onerror=null;">
+                    <img src="https://github.com/yakimoto-design/esline/blob/main/img/reason4.png?raw=true" alt="選ばれる理由4 資格者施工：電気工事士などエアコン設置・電気工事の専門国家資格を保有したベテランが、安全に最善 of 施工を行います！" class="w-full h-auto block" onerror="this.src='https://raw.githubusercontent.com/yakimoto-design/esline/main/img/reason4.png'; this.onerror=null;">
                 </div>
             </div>
         </div>
@@ -821,7 +864,7 @@
     <!-- ★FOOTER CTA (下部お見積りエリア：TOPページのデザイン・連絡先と完全同期) -->
     <section class="bg-slate-100 py-12 md:py-16 text-center">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span class="bg-[#ff7e00] text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Free Consultation</span>
+            <span class="bg-secondary text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Free Consultation</span>
             <h2 class="text-xl md:text-3xl font-black text-slate-900 mt-4 leading-snug">
                 お見積り・ご相談は無料です！<br>
                 お好みの方法でお気軽にご連絡ください
@@ -833,18 +876,18 @@
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 flex flex-col items-center justify-center text-center">
                     <span class="text-xs text-slate-500 font-bold block mb-2">お電話でのお問い合わせ・ご相談</span>
                     <div class="flex items-center justify-center space-x-2 text-[#005bac]">
-                        <i class="fa-solid fa-phone text-2xl"></i>
-                        <a href="tel:090-7426-8221" class="text-3xl md:text-4xl font-black hover:underline tracking-tight">090-7426-8221</a>
+                        <i class="fa-solid fa-phone text-2xl animate-pulse"></i>
+                        <a href="tel:090-7426-8221" class="text-3xl md:text-4xl font-black hover:underline tracking-tight whitespace-nowrap">090-7426-8221</a>
                     </div>
                     <span class="text-xs text-slate-500 mt-3 font-semibold">受付時間 9:00〜18:00（定休日：日曜・祝日）</span>
                 </div>
 
-                <!-- LINE公式アカウント誘導カード (鮮やかなLINEグリーンカード - TOPページ準拠) -->
+                <!-- LINE公式アカウント誘導カード (画像に完全準拠：折り返し防止・文字サイズ調整済み) -->
                 <a href="https://line.me/R/ti/p/@137jkdrm" target="_blank" class="w-full bg-[#06C755] hover:bg-[#05B04B] text-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center transform hover:-translate-y-1 transition duration-200 group">
                     <span class="text-xs text-white opacity-95 font-bold block mb-2">24時間受付 LINEでお問い合わせ</span>
-                    <div class="flex items-center justify-center space-x-2">
-                        <i class="fa-brands fa-line text-4xl group-hover:scale-110 transition duration-200"></i>
-                        <span class="text-xl md:text-2xl font-black">LINE公式アカウントはこちら</span>
+                    <div class="flex items-center justify-center space-x-2 border-b border-transparent overflow-hidden">
+                        <i class="fa-brands fa-line text-4xl group-hover:scale-110 transition duration-200 shrink-0"></i>
+                        <span class="text-base sm:text-xl lg:text-2xl font-black whitespace-nowrap">LINE公式アカウントはこちら</span>
                     </div>
                     <span class="text-[11px] text-white opacity-90 mt-3 font-medium">友だち追加後、お気軽にご相談内容や現場写真を送信ください</span>
                 </a>
@@ -1005,7 +1048,7 @@
 
                 <div class="space-y-2">
                     <h4 class="font-bold text-slate-800">3. 個人情報の第三者提供</h4>
-                    <p>当社は、法令に基づく場合、または生命・身体・財産の保護のために必要な場合を除き、あらかじめご本人の同意を得なく特定個人情報を第三者に提供することはありません。</p>
+                    <p>当社は, 法令に基づく場合、または生命・身体・財産の保護のために必要な場合を除き、あらかじめご本人の同意を得なく特定個人情報を第三者に提供することはありません。</p>
                 </div>
 
                 <div class="space-y-2">
@@ -1056,12 +1099,12 @@
     <script>
         // ロゴ画像のマルチURLフォールバック処理（100%確実な表示のための巡回ロジック）
         const logoUrls = [
-            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo（横長）%20.png", // UTF-8デコード＋半角スペースエスケープ（一番安全）
-            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo（横長）.png", // 一般的な全角表記
-            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo%EF%BC%88%E6%A8%AA%E9%95%B7%EF%BC%89%20.png", // 100%パーセントエンコード（末尾スペースあり）
-            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo%EF%BC%88%E6%A8%AA%E9%95%B7%EF%BC%89.png", // 100%パーセントエンコード（末尾スペースなし）
-            "https://github.com/yakimoto-design/esline/raw/main/img/rogo%EF%BC%88%E6%A8%AA%E9%95%B7%EF%BC%89%20.png", // rawドメイン経由
-            "https://github.com/yakimoto-design/esline/blob/main/img/rogo%EF%BC%88%E6%A8%AA%E9%95%B7%EF%BC%89%20.png?raw=true" // blob + query
+            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo2.png", // 新しいロゴ（最優先・Rawドメイン）
+            "https://github.com/yakimoto-design/esline/blob/main/img/rogo2.png?raw=true", // 新しいロゴ（Blobドメインフォールバック）
+            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo（横長）%20.png", // 予備
+            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo（横長）.png", 
+            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo%EF%BC%8開横長%EF%BC%8D%20.png", 
+            "https://raw.githubusercontent.com/yakimoto-design/esline/main/img/rogo%EF%BC%88%E6%A8%AA%E9%95%B7%EF%BC%8） .png"
         ];
         let currentLogoIndex = 0;
 
